@@ -377,7 +377,7 @@ Home Page
   text-decoration: underline;
   color: #fdffbc;
 }
-span{
+.spantag{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -618,7 +618,7 @@ span{
   .con{
     background-position: center center;
   }
-  span{
+  .spantag{
     margin-top: 48%;
   }
   .buto{
@@ -633,7 +633,7 @@ span{
 
       
         @media only screen and (max-width: 500px) {
-          span{
+          .spantag{
             margin-top: 90%;
           }
           .buto{
