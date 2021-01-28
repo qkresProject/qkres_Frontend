@@ -357,15 +357,26 @@ Home Page
   z-index: 1;
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   background-image:  linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/image\ 6.jpg);
   background-size: cover;
   padding: 2rem;
 }
+.buto{
 
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20%;
+}
+.te{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  text-decoration: underline;
+  color: #fdffbc;
+}
 
 /* bird animation */
 
@@ -518,6 +529,7 @@ Home Page
 /* button animation */
 
 .but {
+
   --offset: 10px;
   --border-size: 4px;
   display: block;
@@ -596,10 +608,25 @@ Home Page
   .con{
     background-position: center center;
   }
+  .buto{
+    margin-top: 50%;
+  }
+  .te{
+    margin-top: 5%;
+    font-size: 13px;
+  }
+
 }
 
       
         @media only screen and (max-width: 500px) {
+          .buto{
+            margin-top: 90%;
+          }
+          .te{
+            margin-top: 10%;
+            font-size: 13px;
+          }
            .but{
             --border-size: 3px;
              font-size: 10px;
