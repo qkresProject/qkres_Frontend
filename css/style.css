@@ -367,7 +367,7 @@ Home Page
  display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 3%;
 }
 .te{
   display: flex;
@@ -376,6 +376,16 @@ Home Page
   margin-top: 2%;
   text-decoration: underline;
   color: #fdffbc;
+}
+span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18%;
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 23px;
 }
 
 /* bird animation */
@@ -608,8 +618,11 @@ Home Page
   .con{
     background-position: center center;
   }
+  span{
+    margin-top: 48%;
+  }
   .buto{
-    margin-top: 50%;
+    margin-top: 8%;
   }
   .te{
     margin-top: 5%;
@@ -620,8 +633,11 @@ Home Page
 
       
         @media only screen and (max-width: 500px) {
-          .buto{
+          span{
             margin-top: 90%;
+          }
+          .buto{
+            margin-top: 15%;
           }
           .te{
             margin-top: 10%;
