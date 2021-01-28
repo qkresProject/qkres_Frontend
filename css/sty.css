@@ -198,7 +198,7 @@ h1
   cursor: pointer;
   font-weight: bold;
   border-radius: 0;
-  box-shaddow: inset 0 0 0 var(--border-size) currentcolor;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
   transition: background .8s ease;
 }
 
