@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/qrcode.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+        <input  class="seatno" type="text" id="qr-data" readonly >
+        <input type="button" class="generate" onclick=generateQR() value="Generate Code">
+    
+      <div style="text-align: center;" class="box" id="qrbox">
+    
+      <div id="qrcode"> 
+        
+    
+    </div> 
+    </div>
+    </div>
+   
+</body>
+
+
+
+<script src="./js/QRcode.min.js"></script>
+<script>
+  var first = sessionStorage.getItem("first");
+      document.getElementById("qr-data").value = first; 
+    var qrdata = document.getElementById('qr-data');
+    var qrcode = new QRCode(document.getElementById('qrcode'));
+
+    function generateQR() {
+        
+        var data = qrdata.value;
+  
+        qrcode.makeCode(data);
+        document.getElementById("qrbox").style.display = "block";
+    }
+
+
+
+ 
+</script>
+
+</html>
