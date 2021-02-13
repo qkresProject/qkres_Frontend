@@ -8,6 +8,11 @@
     background-image: linear-gradient(rgb(133, 233, 200), rgba(206, 207, 247, 0.836), rgba(202, 192, 228, 0.836), rgb(133, 233, 200));
   }
   
+  .heading{
+    color: white;
+    font-size: 2.1rem;
+    text-shadow: 2px 2px 4px rgb(66, 66, 66);
+  }
   .generate {
   
     width: 13%;
@@ -38,7 +43,7 @@
 
   @media(max-width:900px){
       .generate{
-          width:27%;
+          width:30%;
           font-size: 0.8rem;
       }
   }
@@ -47,7 +52,7 @@
       height:320px;
       background-color: white;
       border-radius: 25px;
-      margin-left:35%;
+      margin-left:37%;
       padding:1rem;
       width:320px;
       margin-top: 3rem;
@@ -61,14 +66,14 @@
   }
 
   .seatno {
-    height: 25px;
+    height: 35px;
     background-image: linear-gradient(to right, #c7bbeb, #99d7e2, #a9c9d8);
     background-size: 200%;
     font-size: 1rem;
     font-weight: 600;
     color: rgb(0, 0, 0);
-    width: 10rem;
-    margin-left: 5rem;
+    width: 15rem;
+    margin-left: 1rem;
     border-radius: 5px;
     box-shadow: 1px 1px 4px rgb(100, 100, 100);
     margin-top:2rem;
@@ -76,7 +81,25 @@
     padding:0.3rem;
   }
 
+  .showgrid{
+display:grid;
+grid-template-columns:  1fr 1fr 1fr;
+grid-template-rows: 1fr;
+padding-left:20%;
+padding-right:30%;
+  }
   @media(max-width: 900px){
+    .seatno{
+      width:30rem;
+    }
+    .showgrid{
+      display:grid;
+      grid-template-columns:  1fr ;
+      grid-template-rows: 1fr 1fr 1fr  ;
+      padding-left:33.5%;
+      padding-right:none;
+      margin-bottom: 2rem;
+        }
     .box{
         height:320px;
         background-color: white;

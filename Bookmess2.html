@@ -63,10 +63,10 @@
 			<section class="cn-container">
 				<div class="cn-slide" id="slide-main">
 					<div class="but">
-                        <div style="background: url(images/breakfast.jpeg) center center;" class="breakfast"> <a  href="breakfast.html">Breakfast</a>	</div>
-                        <div style="background: url(images/lunch.jpeg) center center ; " class="lunch" > <a  href="#">Lunch</a> </div>
-                        <div style="background: url(images/snacks.JPG) center center;" class="snacks" > <a  href="#">Snacks</a> </div>
-                        <div style="background: url(images/dinner.jpeg) center center;" class="dinner"> <a  href="#">Dinner</a> </div>
+                        <div style="background: url(images/breakfast.jpeg) center center;" class="breakfast " id="Breakfast"  onclick='printChecked(this.id)'> <a  href="breakfast.html">Breakfast</a>	</div>
+                        <div style="background: url(images/lunch.jpeg) center center ; " class="lunch" id="Lunch"  onclick='printChecked(this.id)'> <a  href="#">Lunch</a> </div>
+                        <div style="background: url(images/snacks.JPG) center center;" class="snacks" id="Snacks" onclick='printChecked(this.id)'> <a  href="#">Snacks</a> </div>
+                        <div style="background: url(images/dinner.jpeg) center center;" class="dinner" id="Dinner"  onclick='printChecked(this.id)'> <a  href="#">Dinner</a> </div>
 
 						
 					</div>
@@ -98,6 +98,19 @@
           }, 1000);
       
       });
+
+      function printChecked(val) {
+      
+
+        var meal = val;
+           
+       
+        // (B) SAVE TO SESSION STORAGE
+        // sessionStorage.setItem("KEY", "VALUE");
+        sessionStorage.setItem("meal", meal);
+       // location.href = "qrcode.html";
+       
+      }
   </script>
   </body>
 </html>

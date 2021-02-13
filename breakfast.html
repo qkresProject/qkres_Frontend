@@ -63,8 +63,8 @@
           <h2>Breakfast Slots</h2>
 					
 					<div class="but">
-                        <div> <a  href="seats.html">7:00 am - 8:00 am</a>	</div>
-                        <div> <a  href="seats.html">8:00 am - 9:00 am</a> </div>
+                        <div> <a  href="seats.html" id="7:00 am - 8:00 am" onclick='printChecked(this.id)' >7:00 am - 8:00 am</a>	</div>
+                        <div> <a  href="seats.html" id="8:00 am - 9:00 am" onclick='printChecked(this.id)' >8:00 am - 9:00 am</a> </div>
 
 					</div>
 				</div>
@@ -95,6 +95,18 @@
           }, 1000);
       
       });
+      function printChecked(val) {
+      
+
+      var slot = val;
+         
+     
+      // (B) SAVE TO SESSION STORAGE
+      // sessionStorage.setItem("KEY", "VALUE");
+      sessionStorage.setItem("slot", slot);
+     // location.href = "qrcode.html";
+     
+    }
   </script>
   </body>
 </html>

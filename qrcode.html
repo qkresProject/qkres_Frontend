@@ -10,9 +10,17 @@
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
     <div class="content">
+        <div class="heading" style="text-align: center;">
+        <h2>Booking Details:</h2>
+    </div>
+        <div class="showgrid">
         <input  class="seatno" type="text" id="qr-data" readonly >
+        <input  class="seatno" type="text" id="qr-data2" readonly >
+        <input  class="seatno" type="text" id="qr-data3" readonly >
+    </div>
+    <div style="text-align: center;">
         <input type="button" class="generate" onclick=generateQR() value="Generate Code">
-    
+    </div>
       <div style="text-align: center;" class="box" id="qrbox">
     
       <div id="qrcode"> 
@@ -29,15 +37,23 @@
 <script src="./js/QRcode.min.js"></script>
 <script>
   var first = sessionStorage.getItem("first");
+  var meal = sessionStorage.getItem("meal");
+  var slot = sessionStorage.getItem("slot");
       document.getElementById("qr-data").value = first; 
+      document.getElementById("qr-data2").value = meal; 
+      document.getElementById("qr-data3").value = slot; 
     var qrdata = document.getElementById('qr-data');
+   
     var qrcode = new QRCode(document.getElementById('qrcode'));
 
     function generateQR() {
         
         var data = qrdata.value;
+       var mealdata= sessionStorage.getItem("meal");
+       var slotdata=sessionStorage.getItem("slot");
+
   
-        qrcode.makeCode(data);
+        qrcode.makeCode(mealdata+" "+slotdata+" "+data);
         document.getElementById("qrbox").style.display = "block";
     }
 
