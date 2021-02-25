@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, 
@@ -12,82 +11,78 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- font awesome cdn -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- css stylesheet -->
     <link rel="stylesheet" href="css/Bookmess2.css" type="text/css">
-
+   
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 
     <title>Book</title>
 
-</head>
-
-<body>
+  </head>
+  <body>
 
 
 
     <!-- Navigation-->
-
+   
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./images/4.jpeg" class="rounded" width="30" height="30"> Qkres</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./images/4.jpeg" class="rounded" width="30" height="30"> Qkres</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Book</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Scan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                    <a class="btn btn-lg btn-success" href="Sign-in.html" role="button">Logout</a>
-                </div>
-            </div>
-        </nav>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Scan</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <a class="btn btn-lg btn-success" href="Sign-in.html" role="button">Logout</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <div class="conta">
+		
+			<section class="cn-container">
+				<div class="cn-slide" id="slide-main">
+					<div class="but">
+                        <div style="background: url(images/breakfast.jpeg) center center;" class="breakfast " id="Breakfast"  onclick='printChecked(this.id)'> <a  href="slot.html">Breakfast</a>	</div>
+                        <div style="background: url(images/lunch.jpeg) center center ; " class="lunch" id="Lunch"  onclick='printChecked(this.id)'> <a  href="slot.html">Lunch</a> </div>
+                        <div style="background: url(images/snacks.JPG) center center;" class="snacks" id="Snacks" onclick='printChecked(this.id)'> <a  href="slot.html">Snacks</a> </div>
+                        <div style="background: url(images/dinner.jpeg) center center;" class="dinner" id="Dinner"  onclick='printChecked(this.id)'> <a   href="slot.html">Dinner</a> </div>
 
-        <section class="cn-container">
-            <div class="cn-slide" id="slide-main">
-                <div class="but">
-                    <div style="background: url(images/breakfast.jpeg) center center;" class="breakfast " id="Breakfast" onclick='printChecked(this.id)'> <a href="breakfast.html">Breakfast</a> </div>
-                    <div style="background: url(images/lunch.jpeg) center center ; " class="lunch" id="Lunch" onclick='printChecked(this.id)'> <a href="breakfast.html">Lunch</a> </div>
-                    <div style="background: url(images/snacks.JPG) center center;" class="snacks" id="Snacks" onclick='printChecked(this.id)'> <a href="#">Snacks</a> </div>
-                    <div style="background: url(images/dinner.jpeg) center center;" class="dinner" id="Dinner" onclick='printChecked(this.id)'> <a href="#">Dinner</a> </div>
-
-
-                </div>
-            </div>
-        </section>
+						
+					</div>
+				</div>
+			</section>
     </div>
 
 
 
 
-    <!--Bottom -->
-    <footer class="footer mt-auto py-3 bg-success">
-        <div class="container text-center">
-            <div class="text" style="color:#fff;">&copy;
-                <script>
-                    document.write(new Date().getFullYear())
-                </script> All rights reserved</div>
-        </div>
-    </footer>
+  <!--Bottom -->
+  <footer class="footer mt-auto py-3 bg-success">
+    <div class="container text-center">
+      <div class="text" style="color:#fff;">&copy; <script> document.write(new Date().getFullYear()) </script> All rights reserved</div>
+    </div>
+  </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -96,27 +91,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script>
-        $(document).ready(function() {
+      $(document).ready(function() {
+      
+          setTimeout(function(){
+              $('body').addClass('loaded');
+          }, 1000);
+      
+      });
 
-            setTimeout(function() {
-                $('body').addClass('loaded');
-            }, 1000);
+      function printChecked(val) {
+      
 
-        });
-
-        function printChecked(val) {
-
-
-            var meal = val;
-
-
-            // (B) SAVE TO SESSION STORAGE
-            // sessionStorage.setItem("KEY", "VALUE");
-            sessionStorage.setItem("meal", meal);
-            // location.href = "qrcode.html";
-
-        }
-    </script>
-</body>
-
+        var meal = val;
+           
+       
+        // (B) SAVE TO SESSION STORAGE
+        // sessionStorage.setItem("KEY", "VALUE");
+        sessionStorage.setItem("meal", meal);
+       // location.href = "qrcode.html";
+       
+      }
+  </script>
+  </body>
 </html>
