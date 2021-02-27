@@ -11,7 +11,10 @@ html,body {
 body{
 	font-weight: 400;
 	font-size: 15px;
-	background-color:  rgb(210, 250, 159);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(215, 238, 186, 0.979)), url(../images/iitmcanteen.jpg);
+	
 }
 .bag{
 	background-color: #0ca12c  ;
@@ -41,9 +44,9 @@ a{
     text-align: center;
     margin-bottom: 30px;
 	text-shadow: 0 0 1px rgba(255,255,255,0.8), 1px 1px 1px rgba(0,0,0,0.2);
-	font-size: 70px;
+	font-size: 60px;
+	font-weight: bold;
 	line-height: 80px;
-	white-space: nowrap;
 
 }
 
