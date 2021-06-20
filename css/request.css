@@ -1,0 +1,170 @@
+body {
+    background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+    background-image: linear-gradient(rgb(133, 233, 200), rgba(235, 245, 191, 0.836), rgba(235, 245, 191, 0.836), rgb(133, 233, 200));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    font-family: 'Montaga', serif;
+    /*   the main font */
+    font-family: 'Montaga', serif;
+
+    /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+  }
+
+
+
+  
+  .head{
+   height:20%;
+   width:100%;
+   background-color: #24960779;
+   color: rgb(0, 0, 0);
+   padding: 0.5rem;
+   text-align: center;
+   font-size: 1.5rem;
+   border-radius: 5px 5px 0px 0px;
+  }
+  
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .card {
+    width:330%;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  
+  form{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width:99%;
+    font-weight:600;
+  }
+  
+  label{
+    font-size: 1.2rem;
+  }
+  
+  input{
+    color: rgba(253, 253, 253, 0.418);
+    background-color: rgba(128, 128, 128, 0.418);
+    font-size: 1rem;
+    border: solid 0.1rem rgb(7, 99, 15);
+  }
+  
+  .back{
+    width: 95%;
+    padding: 3rem;
+    height: 370px;
+    text-align:center;
+  
+    background-image: linear-gradient( rgb(255, 255, 255) 10%, rgb(190, 240, 190)100%);
+  box-shadow: 2px 2px 4px black;
+    border-radius: 5px;
+    margin-bottom:2rem;
+  }
+  
+        .title{
+          color: rgb(0, 0, 0);
+          font-size: 2rem;
+          font-weight: 600;
+          text-shadow: 2px 2px 4px rgb(202, 202, 233);
+        }
+        .cardtitle{
+          font-size: 1.3rem;
+  
+        }
+        .viewbtn{
+          display: block;
+          width: 100px;
+          height: 35px;
+          border-radius: 25px;
+          outline: none;
+          border: none;
+          background-image: linear-gradient(to right, #45a29e, #5bcadd, #3292be);
+          background-size: 200%;
+          font-size: 1.2rem;
+          color: #fff;
+          font-family: "Poppins", sans-serif;
+          text-transform: uppercase;
+          margin: 1rem 0;
+          cursor: pointer;
+          transition: 0.5s;
+        }
+        .viewbtn:hover {
+          background-position: right;
+        }
+  
+        .acceptbtn{
+          display: block;
+          width: 150px;
+          height: 35px;
+          border-radius: 25px;
+          outline: none;
+          border: none;
+         background-image: linear-gradient(to right, #23bb6f, #5bddc1, #10994e);
+          background-size: 200%;
+          font-size: 1.2rem;
+          color: #fff;
+          font-family: "Poppins", sans-serif;
+          text-transform: uppercase;
+          margin: 1rem 0;
+          cursor: pointer;
+          transition: 0.5s;
+        }
+        .acceptbtn:hover {
+          background-position: right;
+        }
+  
+  
+        i{
+          margin-right:0.3rem;
+        }
+
+        
+.topnav {
+    background-color: #198754;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color:  #85c9b2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+color: #ddd;
+   
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+   
+    color: white;
+  }
+  
+  @media(max-width:900px)
+{
+
+.topnav{
+  font-size:1rem;
+}
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+}
+	    

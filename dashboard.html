@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+	  <link rel="stylesheet"   href="./css/dashboard.css"   >
+
+    <div class="topnav">
+        <div style="text-align:right;" >
+
+  <a href="dashboard.html">Slot</a>
+<a href="request.html">Appoinments</a>
+ <a href="#"><i class="fa fa-power-off"></i>Logout</a>
+     </div>
+
+
+</div>
+  </head>
+  <body>
+
+  <div style="text-align:center;" >
+        <h3 style="color:rgb(3, 21, 81);">
+
+
+
+
+    </h3>
+ </div>
+
+<h3 class="headerdoctor">
+              Select Date:
+            </h3>
+
+
+           <div class="container">
+
+
+
+	        	<form  method="post">
+		            <div class="form-group">
+		                <div class='input-group date' style="text-align: center;">
+
+		                    <input    id="myDate" type='date' class="form-control" />
+		                    
+		                 
+		                </div>
+		            </div>
+
+
+
+    </div>
+    <div>
+    <h3 class="headerdoctor">
+              Select Timeslot:
+            </h3>
+
+
+ <div class="table" >
+<div>
+
+
+  <div class="grid">
+
+   <div class="time">
+      <td>00:00-01:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="00:00-01:00" value="00:00-01:00"></th>
+</div>
+
+
+<div class="time">
+      <td>01:00-02:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="01:00-02:00" value="01:00-02:00"></th>
+  </div>
+
+
+
+ <div class="time"><td>02:00-03:00</td>
+    <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="02:00-03:00" value="02:00-03:00"></th>
+
+</div>
+
+<div class="time">	  <td>03:00-04:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="03:00-04:00" value="03:00-04:00"></th>
+  </div>
+
+  <div class="time">
+      <td>04:00-05:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="04:00-05:00" value="04:00-05:00"></th>
+  </div>
+
+     <div class="time"> <td>05:00-06:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="05:00-06:00" value="05:00-06:00"></th>
+</div>
+
+
+<div class="time"><td>06:00-07:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="06:00-07:00" value="06:00-07:00"></th>
+  </div>
+
+  <div class="time">
+      <td>07:00-08:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="07:00-08:00" value="07:00-08:00"></th>
+  </div>
+
+  <div class="time">
+
+      <td>08:00-09:00</td>
+
+    <th><input onclick="slotsave(value);"  type="checkbox" name="slot[]" id="08:00-09:00" value="08:00-09:00"></th>
+     </div>
+
+
+     <div class="time">
+	  <td>09:00-10:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="09:00-10:00" value="09:00-10:00"></th>
+  </div>
+
+  <div class="time">
+      <td>10:00-11:00</td>
+      <th><input onclick="slotsave(value);"  type="checkbox" name="slot[]" id="10:00-11:00" value="10:00-11:00"></th>
+  </div>
+
+  <div class="time">
+
+      <td>11:00-12:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="11:00-12:00" value="11:00-12:00"></th>
+ </div>
+
+ <div class="time">
+      <td>12:00-13:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="12:00-13:00" value="12:00-13:00"></th>
+  </div>
+
+  <div class="time">
+      <td>13:00-14:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="13:00-14:00" value="13:00-14:00"></th>
+  </div>
+
+  <div class="time">
+
+      <td>14:00-15:00</td>
+    <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="14:00-15:00" value="14:00-15:00"></th>
+    </div>
+
+    <div class="time">
+	  <td>15:00-16:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="15:00-16:00" value="15:00-16:00"></th>
+  </div>
+
+  <div class="time">
+      <td>16:00-17:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="16:00-17:00" value="16:00-17:00"></th>
+  </div>
+
+
+  <div class="time" >
+      <td>17:00-18:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="17:00-18:00" value="17:00-18:00"></th>
+ </div>
+
+
+ <div class="time">
+	  <td>18:00-19:00</td>
+    <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="18:00-19:00" value="18:00-19:00"></th>
+
+    </div>
+
+
+    <div class="time">
+
+      <td>19:00-20:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="19:00-20:00" value="19:00-20:00"></th>
+  </div>
+
+
+  <div class="time">
+      <td>20:00-21:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="20:00-21:00" value="20:00-21:00"></th>
+    </div>
+
+    <div class="time">
+
+      <td>21:00-22:00</td>
+    <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="21:00-22:00" value="21:00-22:00"></th>
+    </div>
+
+    <div class="time">
+	  <td>22:00-23:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="22:00-23:00" value="22:00-23:00"></th>
+  </div>
+
+  <div class="time">
+      <td>23:00-00:00</td>
+      <th><input onclick="slotsave(value);" type="checkbox" name="slot[]" id="23:00-00:00" value="23:00-00:00"></th>
+      </div>
+
+
+
+  </div>
+
+  </div>
+</div>
+<div style="text-align: center;">
+					    
+<div style="text-align: center;">
+
+
+    <button onclick="save();" type="button" class=" submits " value="Submit" name="btn-save"> Submit Slots</button>
+</div>
+</form>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript">
+ 
+
+      
+    
+            
+            
+        
+        
+    
+
+    function slotsave(value)
+    {
+        
+        sessionStorage.setItem("SLOT", value);
+        console.log(sessionStorage.getItem("SLOT"));
+    }
+    
+    function save() 
+    {
+         
+           
+     
+           var slotdata = sessionStorage.getItem("SLOT");
+
+        
+        try {
+            axios.post('http://localhost:5000/slots/post', { Date:  document.getElementById('myDate').value.toString(), slot: slotdata, taken: "YES" });
+             }
+        catch (err) {
+            console.error(err);
+        }
+        element="";
+      location.href="request.html";
+
+    }
+
+
+
+
+</script>
+
+   
+  </body>
+</html>

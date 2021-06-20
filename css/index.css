@@ -1,0 +1,286 @@
+
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+::-moz-selection {
+  background: #cc0000;
+  text-shadow: none;
+}
+
+::selection {
+  background: #cc0000;
+  text-shadow: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.background {
+  background: url("https://assets.telegraphindia.com/abped/2020/Sep/1600355934_iit-madras.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: brightness(90%);
+  height: 105%;
+  position: relative;
+  width: 105%;
+  right: -2.5%;
+  left: -2.5%;
+  top: -2.5%;
+  bottom: -2.5%;
+}
+
+* {
+  box-sizing: border-box;
+  cursor: default;
+  outline: none;
+}
+
+form {
+  background: rgba(7, 94, 12, 0.664);
+  border-radius: 0.4em;
+  bottom: 0;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+  height: 50%;
+  left: 0;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80%;
+  padding: 3rem;
+  margin-top: 4rem;
+}
+
+@media (min-width: 800px) {
+  form {
+    border-radius: 0.4em;
+    bottom: 0;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+    height: 300px;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    padding: 3rem;
+    margin-top: 13rem;
+  }
+}
+
+form:after {
+  background: linear-gradient(
+    to right,
+    #111111,
+    #444444,
+    #b6b6b8,
+    #444444,
+    #2f2f2f,
+    #272727
+  );
+  content: "";
+  display: block;
+}
+
+.inset {
+  border-top: 1px solid #19191a;
+  padding: 20px;
+}
+
+form h1 {
+
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+  padding: 15px 0;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 0 #000;
+}
+
+form h1 {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+
+input[type="username"],
+input[type="password"] {
+  background: linear-gradient(#1f2124, #27292c);
+  border: 1px solid #222;
+  border-radius: 0.3em;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 20px;
+  padding: 8px 5px;
+  width: 100%;
+}
+
+input[type="text"]:disabled,
+input[type="password"]:disabled {
+  color: #999;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  height: 35px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #45a24d, #75dd5b, #32be45);
+  background-size: 200%;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow:2px 2px 4px rgb(231, 231, 231);
+}
+input[type="submit"]:hover {
+  background-position: right;
+}
+
+.denied {
+  color: white !important;
+  text-shadow: 0 0 1px black;
+  background: #ee0000 !important;
+}
+
+.logo {
+  margin-top: 1rem;
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+  .logo {
+    margin: 1rem;
+    margin-top: 2rem;
+    width: 25%;
+  }
+}
+
+#doctor{
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+text-shadow: 2px 2px 4px white;
+
+  
+}
+
+

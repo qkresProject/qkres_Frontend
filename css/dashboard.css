@@ -1,0 +1,296 @@
+input[type="text"] {
+    font-family: 'Montaga', serif;
+
+    border-radius: 5px 5px 5px 5px;
+
+  margin:0;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 245, 245, 0.836);
+    height: 5rem;
+   margin-bottom: 1rem;
+    transition: 0.2s linear;
+    font-size: 3rem;
+    width:90%;
+  }
+
+
+
+.submits {
+
+width: 15%;
+height: 70%;
+border-radius: 5px 5px 5px 5px;
+outline: none;
+border: none;
+background-image: linear-gradient(to right, #58ccc0, #86cedb, #043681);
+background-size: 200%;
+font-size: 2rem;
+color: black;
+font-family: 'Montaga', serif;
+text-transform: uppercase;
+margin: 1rem 0;
+cursor: pointer;
+transition: 0.5s;
+margin-bottom: 2rem;
+}
+.submits:hover {
+background-position: right;
+color: white;
+box-shadow: 2px 2px 4px rgb(116, 116, 116);
+}
+
+.topnav {
+background-color: #198754;
+overflow: hidden;
+margin-bottom: 1rem;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+color:  #85c9b2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+color: #ddd;
+
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+
+color: white;
+}
+
+
+
+/*       Forgot Password button FAF3DD  */
+
+/*     Sign Up button  */
+
+input[type="email"] {
+    background-color:rgba(255, 245, 245, 0.836);
+
+    font-family: 'Montaga', serif;
+border: solid 0.05rem black;
+
+    outline: none;
+    border: none;
+    height: 5rem;
+    width: 50%;
+    border-radius: 5px 5px 5px 5px;
+    transition: 0.2s linear;
+    font-size: 2rem;
+  }
+
+.headerdoctor {
+    font-size: 2.1em;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Montaga', serif;
+    color:black;
+  }
+body {
+    background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+    background-image: linear-gradient(rgb(133, 233, 200), rgba(235, 245, 191, 0.836), rgba(235, 245, 191, 0.836), rgb(133, 233, 200));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    font-family: 'Montaga', serif;
+    /*   the main font */
+    font-family: 'Montaga', serif;
+
+    /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+  }
+
+
+.table {
+
+padding:2rem;
+border-collapse: separate;
+
+text-align: center;
+font-size: 2rem;
+height: 80%;
+}
+
+
+
+
+td {
+padding-left:3rem ;
+text-align: center;
+padding-right: 1rem;
+}
+
+
+.grid{
+display: grid;
+grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
+row-gap: 1rem;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.time{
+
+border-radius: 5px;
+
+margin:1rem;
+color: rgb(34, 34, 34);
+border-color:rgb(2, 82, 55);
+
+border-style: solid 0.08rem;
+background-color:rgb(93, 247, 195);
+
+background-image: linear-gradient(rgb(133, 233, 200), rgba(255, 245, 245, 0.836), rgba(255, 245, 245, 0.836), rgba(255, 245, 245, 0.836),  rgba(255, 245, 245, 0.836),rgb(133, 233, 200));
+
+height: 3.5rem;
+padding-top: 0.5rem;
+
+
+border: solid 0.05rem rgb(5, 199, 134);
+
+}
+
+select{
+background-color:rgba(255, 245, 245, 0.836);
+height:5rem;
+font-size: 1.5rem;
+border-radius:5px;
+width:80%;
+border: solid 0.05rem black;
+}
+
+@media(max-width:800px)
+{.submits {
+
+width: 50%;
+height:30%
+}
+.grid{
+display: grid;
+grid-template-columns:1fr 1fr  ;
+grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.table {
+border-collapse: separate;
+
+text-align: center;
+font-size: 1.5rem;
+}
+input[type="email"] {
+    background-color:rgba(255, 245, 245, 0.836);
+
+    font-family: 'Montaga', serif;
+
+
+    outline: none;
+    border: none;
+    height: 5rem;
+    width: 90%;
+    border-radius: 5px 5px 5px 5px;
+    transition: 0.2s linear;
+    font-size: 2rem;
+    border: solid 0.05rem black;
+  }
+  .calendar{
+
+margin-left: 15%;
+}
+
+}
+
+table {
+
+border-radius: 5px;
+background-image: linear-gradient(-225deg, #ececec 0%, rgb(78, 221, 173) 80%);
+color: rgb(34, 34, 34);
+
+
+
+}
+
+td{
+
+font-size: 2rem;
+}
+
+th{
+font-size: 3rem;
+color:rgb(15, 7, 53);
+}
+
+i{
+    margin-right:0.3rem;
+  }
+@media(max-width:900px)
+{
+
+.topnav{
+font-size:1rem;
+}
+.topnav a {
+float: left;
+color: #000000;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 1.2rem;
+}
+}
+    
+
+.date{
+   
+  border: solid 0.05rem black;
+       border-radius: 5px;
+   height: 2rem;
+   margin-left: 25%;
+}
+      
+   
+            @media(min-width:900px){
+ .date{
+    width:30%;
+  
+    border: solid 0.05rem black;
+     border-radius: 5px;
+     margin-left: 35%;
+  }
+  select{
+    width:30%;
+  }
+
+ input[type="email"]
+ {
+   width: 35%;
+   border: solid 0.05rem black;
+ }  
+                
+        
+
+}
+    
+  input[type=date] {
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: solid rgb(6, 145, 64) 0.2rem;
+    box-shadow: 2px 2px 4px rgb(85, 85, 85);
+    height: 4rem;
+   
+  } ::placeholder{
+    color: white;
+  }
+
+  input[type=text], input[type=email] {
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: solid rgb(6, 145, 64) 0.2rem;
+  }
+  
+ 
