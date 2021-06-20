@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <link rel="stylesheet" href="css/seats.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <header>
+        <div class="background">
+            <div class="topnav">
+
+
+
+
+                <div style="text-align: right;">
+                    <a href="#"><i class="fa fa-power-off"></i>Logout</a>
+
+                </div>
+
+            </div>
+            <div style="text-align:center" class="banner">Welcome to ABCD Mess
+            </div>
+        </div>
+        </div>
+
+    </header>
+
+
+    <body>
+
+        <div class="searchgrid" style="text-align: center;">
+            <div>
+                <select class="seatno" id="seatno">
+            <option value="1">Table 1</option>
+            <option value="2">Table 2</option>
+            <option value="3">Table 3</option>
+            <option value="4">Table 4</option>
+            <option value="5">Table 5</option>
+            <option value="6">Table 6</option>
+            <option value="7">Table 7</option>
+            <option value="8">Table 8</option>
+            <option value="9">Table 9</option>
+            <option value="10">Table 10</option>
+            <option value="11">Table 11</option>
+            <option value="12">Table 12</option>
+            <option value="13">Table 13</option>
+            <option value="14">Table 14</option>
+            <option value="15">Table 15</option>
+            <option value="16">Table 16</option>
+            <option value="17">Table 17</option>
+            <option value="18">Table 18</option>
+            <option value="19">Table 19</option>
+            <option value="20">Table 20</option>
+            <option value="21">Table 21</option>
+            <option value="22">Table 22</option>
+            <option value="23">Table 23</option>
+            <option value="24">Table 24</option>
+            <option value="25">Table 25</option>
+            <option value="26">Table 26</option>
+            <option value="27">Table 27</option>
+            <option value="28">Table 28</option>
+            <option value="29">Table 29</option>
+            <option value="30">Table 30</option>
+</select>
+            </div>
+            <div> <button class="gobutton" onclick='GotoTable()'>Go</button>
+            </div>
+
+        </div>
+
+        </div>
+
+        <form>
+        <div class="mobile">
+            <div class="tablegrid">
+                <div class="table" id="Table1">
+                    <div style="text-align: center;">Table 1</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected "> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="1-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="1-A" id="button:1-A" onclick='printChecked(this.value)'>
+                            </div>
+
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="1-B"></i>
+                            <br>
+
+                            <div>
+                                <input class="" type="button" value="1-B" id="button:1-B" onclick='printChecked(this.value)'>
+                            </div>
+
+
+                        </div>
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="1-C"></i>
+
+                            <br>
+                            <div>
+                                <input class="" type="button" value="1-C" id="button:1-C" onclick='printChecked(this.value)'>
+                            </div>
+
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="1-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="1-D" id="button:1-D" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="1-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="1-E" id="button:1-E" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="1-F"></i>
+                            <br>
+
+                            <div>
+                                <input class="" type="button" value="1-F" id="button:1-F" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="Table2" class="table2">
+                    <div style="text-align: center;">Table 2</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="2-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="2-A" id="button:2-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="2-B"></i>
+                            <div>
+                                <input class="" type="button" value="2-B" id="button:2-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="2-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="2-C" id="button:2-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="2-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="2-D" id="button:2-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="2-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="2-E" id="button:2-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="2-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="2-F" id="button:2-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="Table3" class="tablegrid">
+                <div class="table">
+                    <div style="text-align: center;">Table 3</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="3-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="3-A" id="button:3-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="3-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="3-B" id="button:3-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="3-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="3-C" id="button:3-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="3-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="3-D" id="button:3-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="3-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="3-E" id="button:3-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="3-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="3-F" id="button:3-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table4" class="table2">
+                    <div style="text-align: center;">Table 4</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="4-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="4-A" id="button:4-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="4-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="4-B" id="button:4-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="4-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="4-C" id="button:4-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="4-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="4-D" id="button:4-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="4-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="4-E" id="button:4-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="4-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="4-F" id="button:4-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tablegrid">
+                <div id="Table5" class="table">
+                    <div style="text-align: center;">Table 5</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="5-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="5-A" id="button:5-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="5-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="5-B" id="button:5-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="5-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="5-C" id="button:5-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="5-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="5-D" id="button:5-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="5-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="5-E" id="button:5-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="5-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="5-F" id="button:5-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table6" class="table2">
+                    <div style="text-align: center;">Table 6</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="6-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="6-A" id="button:6-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="6-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="6-B" id="button:6-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="6-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="6-C" id="button:6-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="6-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="6-D" id="button:6-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="6-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="6-E" id="button:6-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="6-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="6-F" id="button:6-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tablegrid">
+                <div id="Table7" class="table">
+                    <div style="text-align: center;">Table 7</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="7-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="7-A" id="button:7-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="7-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="7-B" id="button:7-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="7-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="7-C" id="button:7-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="7-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="7-D" id="button:7-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="7-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="7-E" id="button:7-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="7-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="7-F" id="button:7-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table8" class="table2">
+                    <div style="text-align: center;">Table 8</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="8-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="8-A" id="button:8-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="8-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="8-B" id="button:8-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="8-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="8-C" id="button:8-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="8-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="8-D" id="button:8-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="8-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="8-E" id="button:8-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="8-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="8-F" id="button:8-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tablegrid">
+                <div id="Table9" class="table">
+                    <div style="text-align: center;">Table 9</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="9-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="9-A" id="button:9-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="9-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" Value="9-B" id="button:9-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="9-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="9-C" id="button:9-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="9-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="9-D" id="button:9-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="9-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="9-E" id="button:9-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="9-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="9-F" id="button:9-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table10" class="table2">
+                    <div style="text-align: center;">Table 10</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="10-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="10-A" id="button:10-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="10-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="10-B" id="button:10-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="10-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="10-C" id="button:10-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="10-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="10-D" id="button:10-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="10-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="10-E" id="button:10-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="10-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="10-F" id="button:10-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tablegrid">
+                <div id="Table11" class="table">
+                    <div style="text-align: center;">Table 11</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="11-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="11-A" id="button:11-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="11-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="11-B" id="button:11-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="11-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="11-C" id="button:11-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="11-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="11-D" id="button:11-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="11-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="11-E" id="button:11-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="11-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="11-F" id="button:11-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table12" class="table2">
+                    <div style="text-align: center;">Table 12</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="12-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="12-A" id="button:12-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="12-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="12-B" id="button:12-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="12-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="12-C" id="button:12-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="12-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="12-D" id="button:12-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="12-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="12-E" id="button:12-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="12-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="12-F" id="button:12-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tablegrid">
+                <div id="Table13" class="table">
+                    <div style="text-align: center;">Table 13</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="13-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="13-A" id="button:13-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="13-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="13-B" id="button:13-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="13-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="13-C" id="button:13-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="13-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="13-D" id="button:13-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="13-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="13-E" id="button:13-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="13-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="13-F" id="button:13-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table14" class="table2">
+                    <div style="text-align: center;">Table 14</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="14-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="14-A" id="button:14-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="14-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="14-B" id="button:14-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="14-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="14-C" id="button:14-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="14-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="14-D" id="button:14-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="14-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="14-E" id="button:14-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="14-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="14-F" id="button:14-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tablegrid">
+                <div id="Table15" class="table">
+                    <div style="text-align: center;">Table 15</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="15-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="15-A" id="button:15-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="15-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="15-B" id="button:15-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="15-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="15-C" id="button:15-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="15-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="15-D" id="button:15-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="15-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="15-E" id="button:15-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="15-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="15-F" id="button:15-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table16" class="table2">
+                    <div style="text-align: center;">Table 16</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="16-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="16-A" id="button:16-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="16-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="16-B" id="button:16-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="16-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="16-C" id="button:16-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="16-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="16-D" id="button:16-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="16-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="16-E" id="button:16-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="16-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="16-F" id="button:16-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tablegrid">
+                <div id="Table17" class="table">
+                    <div style="text-align: center;">Table 17</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="17-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="17-A" id="button:17-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="17-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="17-B" id="button:17-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="17-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="17-C" id="button:17-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="17-D"> </i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="17-D" id="button:17-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="17-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="17-E" id="button:17-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="17-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="17-F" id="button:17-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table18" class="table2">
+                    <div style="text-align: center;">Table 18</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="18-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="18-A" id="button:18-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="18-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="18-B" id="button:18-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="18-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="18-C" id="button:18-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="18-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="18-D" id="button:18-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="18-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="18-E" id="button:18-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="18-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="18-F" id="button:18-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tablegrid">
+                <div id="Table19" class="table">
+                    <div style="text-align: center;">Table 19</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="19-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="19-A" id="button:19-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="19-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="19-B" id="button:19-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="19-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="19-C" id="button:19-C" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="19-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="19-D" id="button:19-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="19-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="19-E" id="button:19-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="19-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="19-F" id="button:19-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table20" class="table2">
+                    <div style="text-align: center;">Table 20</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="20-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="20-A" id="button:20-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="20-B"> </i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="20-B" id="button:20-B" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="20-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="20-C" id="button:20-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="20-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="20-D" id="button:20-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="20-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="20-E" id="button:20-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="20-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="20-F" id="button:20-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tablegrid">
+                <div id="Table21" class="table">
+                    <div style="text-align: center;">Table 21</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="21-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="21-A" id="button:21-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="21-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="21-B" id="button:21-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="21-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="21-C" id="button:21-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="21-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="21-D" id="button:21-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="21-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="21-E" id="button:21-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="21-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="21-F" id="button:21-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table22" class="table2">
+                    <div style="text-align: center;">Table 22</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="22-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="22-A" id="button:22-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="22-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="22-B" id="button:22-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="22-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="22-C" id="button:22-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="22-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="22-D" id="button:22-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="22-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="22-E" id="button:22-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="22-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="22-F" id="button:22-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tablegrid">
+                <div id="Table23" class="table">
+                    <div style="text-align: center;">Table 23</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="23-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="23-A" id="button:23-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="23-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="23-B" id="button:23-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="23-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="23-C" id="button:23-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="23-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="23-D" id="button:23-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="23-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="23-E" id="button:23-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="23-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="23-F" id="button:23-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table24" class="table2">
+                    <div style="text-align: center;">Table 24</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="24-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="24-A" id="button:24-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="24-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="24-B" id="button:24-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="24-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="24-C" id="button:24-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="24-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="24-D" id="button:24-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="24-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="24-E" id="button:24-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="24-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="24-F" id="button:24-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tablegrid">
+                <div id="Table25" class="table">
+                    <div style="text-align: center;">Table 25</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="25-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="25-A" id="button:25-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="25-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="25-B" id="button:25-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="25-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="25-C" id="button:25-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="25-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="25-D" id="button:25-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="25-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="25-E" id="button:25-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="25-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="25-F" id="button:25-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table26" class="table2">
+                    <div style="text-align: center;">Table 26</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="26-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="26-A" id="button:26-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="26-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="26-B" id="button:26-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="26-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="26-C" id="button:26-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="26-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="26-D" id="button:26-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="26-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="26-E" id="button:26-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="26-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="26-F" id="button:26-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tablegrid">
+                <div id="Table27" class="table">
+                    <div style="text-align: center;">Table 27</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="27-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="27-A" id="button:27-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="27-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="27-B" id="button:27-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="27-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="27-C" id="button:27-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="27-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="27-D" id="button:27-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="27-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="27-E" id="button:27-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="27-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="27-F" id="button:27-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table28" class="table2">
+                    <div style="text-align: center;">Table 28</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="28-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="28-A" id="button:28-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="28-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="28-B" id="button:28-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="28-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="28-C" id="button:28-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="28-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="28-D" id="button:28-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="28-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="28-E" id="button:28-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="28-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="28-F" id="button:28-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tablegrid">
+                <div id="Table29" class="table">
+                    <div style="text-align: center;">Table 29</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="29-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="29-A" id="button:29-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="29-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="29-B" id="button:29-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="29-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="29-C" id="button:29-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="29-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="29-D" id="button:29-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="29-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="29-E" id="button:29-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="29-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="29-F" id="button:29-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Table30" class="table2">
+                    <div style="text-align: center;">Table 30</div>
+                    <br>
+                    <div class="seatgrid">
+
+
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="30-A"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="30-A" id="button:30-A" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="30-B"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="30-B" id="button:30-B" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="30-C"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="30-C" id="button:30-C" onclick='printChecked(this.value)'>
+                            </div>
+
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="30-D"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="30-D" id="button:30-D" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"><i class='chair fas fa-chair' onclick='printChecked(this.id)' id="30-E"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="30-E" id="button:30-E" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                        <div class="selected"> <i class='chair fas fa-chair' onclick='printChecked(this.id)' id="30-F"></i>
+                            <br>
+                            <div>
+                                <input class="" type="button" value="30-F" id="button:30-F" onclick='printChecked(this.value)'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<input type="button" value="Submit" class="submits" onclick="store()" />
+
+
+      
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src='./js/seats.js'>
+
+</script>
+
+<script type="text/javascript">
+
+    function preloadFunc() {
+        var s = new Map()
+        axios.get('http://localhost:3000/seats/')
+            .then(response => {
+                if (response.data.length > 0) {
+
+                    var seats = response.data.map(seat => seat);
+
+                    for (var i = 0; i < seats.length; i++) {
+
+
+
+                        if (seats[i].taken === "YES") {
+                            var simage = document.getElementById(seats[i].seat);
+                            var sbutton = document.getElementById("button:" + seats[i].seat);
+                            sbutton.className = "";
+                            sbutton.className += "redselect";
+
+                            sbutton.disabled = true;
+                            s[seats[i].seat] = 'YES';
+                        }
+
+
+                    }
+
+                }
+
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+        for (var i = 1; i <= 30; i++) {
+            for (var j = 65; j <= 70; j++) {
+                var a = i + "-" + String.fromCharCode(j);
+                if (s[a] !== 'YES') {
+                    var simage = document.getElementById(a);
+                    var sbutton = document.getElementById("button:" + a);
+                    sbutton.className = "";
+                    sbutton.className += "seatselect";
+
+                    s[a] = 'NO';
+                }
+
+            }
+        }
+
+    }
+
+    preloadFunc();
+
+
+    function store() {
+        // (A) VARIABLES TO PASS
+        var first = globalVariable;
+
+
+        // (B) SAVE TO SESSION STORAGE
+        // sessionStorage.setItem("KEY", "VALUE");
+        sessionStorage.setItem("first", first);
+
+
+        location.href = "qrcode.html";
+    }
+
+
+</script>
+
+</body>
+
+   
+</html>
+      
+      
+

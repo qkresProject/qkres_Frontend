@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, 
+    shrink-to-fit=no">
+    <!-- Google Auth Code -->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/breakfast.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+    <style>
+        #slot1,
+        #slot2 {
+            background-color: rgba(0, 255, 255, 0);
+            color: white;
+            border: none;
+            margin-left: 2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./images/4.jpeg" class="rounded" width="30" height="30"> Qkres</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Scan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-lg btn-success" href="Sign-in.html" role="button">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="conta">
+
+        <section class="cn-container">
+            <div class="cn-slide" id="slide-main">
+                <h2>Breakfast Slots</h2>
+
+                <div class="but">
+                    <div>
+                        <a href="seats.html" onclick='printChecked(this.id)'>
+                            <input id="slot1" readonly>
+                        </a>
+
+                    </div>
+                    <div>
+                        <a href="seats.html" onclick='printChecked(this.id)'><input id="slot2" readonly></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <!--Bottom -->
+    <footer class="footer mt-auto py-3 bg-success ">
+        <div class="container text-center">
+            <div class="text" style="color:#fff;">&copy;
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> All rights reserved</div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            setTimeout(function() {
+                $('body').addClass('loaded');
+            }, 1000);
+
+        });
+
+        var meal = sessionStorage.getItem("meal");
+        if (meal === 'Breakfast') {
+            var breakfast1 = " 7:00AM - 8:00AM";
+            document.getElementById('slot1').value = breakfast1;
+            var breakfast2 = ' 8:00AM - 9:00AM';
+            document.getElementById("slot2").value = breakfast2;
+
+        }
+        if (meal === 'Lunch') {
+            var lunch1 = " 1:00PM - 2:00PM";
+            document.getElementById('slot1').value = lunch1;
+            var lunch2 = ' 2:00PM - 3:00PM';
+            document.getElementById("slot2").value = lunch2;
+
+        }
+
+        function printChecked(val) {
+
+
+            var slot = val;
+
+
+            // (B) SAVE TO SESSION STORAGE
+            // sessionStorage.setItem("KEY", "VALUE");
+            sessionStorage.setItem("slot", slot);
+            // location.href = "qrcode.html";
+
+        }
+    </script>
+</body>
+
+</html>
